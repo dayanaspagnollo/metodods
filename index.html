@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método DS — Corpo em Movimento</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dsBlack: '#0a0a0a',
+                        dsCard: '#141210',
+                        dsBrown: '#2c221e',
+                        dsGold: '#d4af37',
+                        dsBeige: '#f5efe6',
+                        dsBeigeMuted: '#d1c7bd',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dsBlack text-dsBeige font-sans antialiased min-h-screen flex flex-col items-center justify-between p-4">
+
+    <!-- Container Principal (Foco em mobile / Centralizado) -->
+    <div class="w-full max-w-md mx-auto flex flex-col items-center py-6">
+
+        <!-- Topo: Marca / Linha Fina -->
+        <span class="text-xs tracking-[0.25em] text-dsGold uppercase mb-4 font-medium">Método DS</span>
+        
+        <!-- Título Principal -->
+        <div class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-serif font-bold tracking-wide uppercase leading-tight text-dsBeige">
+                Corpo em Movimento
+            </h1>
+            <div class="w-16 h-[2px] bg-dsGold mx-auto mt-4"></div>
+        </div>
+
+        <!-- Foto / Elemento Visual Principal -->
+        <div class="w-full rounded-2xl overflow-hidden mb-6 border border-dsBrown/60 shadow-2xl bg-dsCard relative">
+            <!-- 
+                DICA PARA SUA FOTO: 
+                Para usar sua foto profissional, substitua o link abaixo (src="") pelo link direto da sua imagem 
+                (hospedada no Instagram, Imgur ou no seu próprio site). 
+                Caso prefira uma imagem elegante sem pessoas por enquanto, deixei uma textura sofisticada em tons escuros.
+            -->
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=800" 
+                 alt="Método DS - Treinamento Feminino" 
+                 class="w-full h-72 object-cover object-center opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-dsBlack via-transparent to-transparent opacity-80"></div>
+        </div>
+
+        <!-- Subtítulo de Impacto -->
+        <div class="text-center mb-5 px-2">
+            <p class="text-lg font-medium tracking-wide text-white leading-snug font-serif">
+                30 dias para começar.<br>Uma estratégia para continuar.
+            </p>
+        </div>
+
+        <!-- Texto de Apoio Acolhedor e Persuasivo -->
+        <div class="text-center mb-8 px-3">
+            <p class="text-sm text-dsBeigeMuted leading-relaxed">
+                Treinos em casa, planejamento e orientação para mulheres que querem emagrecer, definir o corpo ou desenvolver massa muscular, sem depender de uma rotina perfeita para começar.
+            </p>
+        </div>
+
+        <!-- Formulário de Captura / Inscrição -->
+        <!-- Substitua o link do WhatsApp abaixo pelo seu número real (ex: https://wa.me/5516999999999?text=Quero%20saber%20mais%20sobre%20o%20Método%20DS) -->
+        <form action="https://wa.me/5516999999999?text=Olá!%20Quero%20entrar%20no%20lançamento%20do%20Método%20DS." method="GET" target="_blank" class="w-full flex flex-col gap-3">
+            
+            <!-- Campo: Nome -->
+            <input type="text" placeholder="Seu primeiro nome" required
+                class="w-full bg-dsCard border border-dsBrown rounded-xl px-4 py-4 text-dsBeige placeholder-dsBeigeMuted/50 focus:outline-none focus:border-dsGold transition text-sm">
+
+            <!-- Campo: E-mail -->
+            <input type="email" placeholder="Seu melhor e-mail" required
+                class="w-full bg-dsCard border border-dsBrown rounded-xl px-4 py-4 text-dsBeige placeholder-dsBeigeMuted/50 focus:outline-none focus:border-dsGold transition text-sm">
+
+            <!-- Campo: WhatsApp -->
+            <input type="tel" placeholder="WhatsApp com DDD" required
+                class="w-full bg-dsCard border border-dsBrown rounded-xl px-4 py-4 text-dsBeige placeholder-dsBeigeMuted/50 focus:outline-none focus:border-dsGold transition text-sm">
+
+            <!-- Botão de Ação -->
+            <button type="submit" 
+                class="w-full bg-gradient-to-r from-dsGold via-[#e5c158] to-dsGold text-dsBlack font-bold uppercase tracking-wider text-xs py-4 px-6 rounded-xl flex items-center justify-center gap-2 shadow-xl hover:opacity-95 transition transform active:scale-98 mt-2">
+                <span>Quero começar minha transformação</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </button>
+        </form>
+
+        <!-- Rodapé do Formulário / Segurança -->
+        <p class="text-center text-[11px] text-dsBeigeMuted/70 mt-6 leading-relaxed px-4">
+            Ambiente seguro. Suas informações protegidas e direcionamento exclusivo para o lançamento.
+        </p>
+
+    </div>
+
+</body>
+</html>
